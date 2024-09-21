@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar que muestra el nombre de la app -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2A8A2B"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="@string/calculadora_agraria"
+        android:elevation="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cada ítem está envuelto en un CardView para controlar el clic -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentStart="true">
+
+                        <!-- Textos del ítem -->
+                        <TextView
+                            android:id="@+id/txt_labor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Labor"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <!-- Fechas de inicio y fin -->
+                        <TextView
+                            android:id="@+id/txt_fechas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fecha Inicio - Fecha Fin"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+
+                        <!-- Semana y días trabajados -->
+                        <TextView
+                            android:id="@+id/txt_semana_dias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Semana: X, Días: Y"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+
+                        <!-- Horas extras y bonos -->
+                        <TextView
+                            android:id="@+id/txt_horas_bonos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horas Extras: 0, Bonos: No"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+
+                        <!-- Empresa -->
+                        <TextView
+                            android:id="@+id/txt_empresa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Empresa: Nombre de la Empresa"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
+
+                    <!-- Sección de íconos -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+
+                        <!-- Ícono de lápiz para editar -->
+                        <ImageButton
+                            android:id="@+id/icon_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Editar"
+                            android:padding="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/edit_icon" />
+
+                        <ImageButton
+                            android:id="@+id/icon_edit2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Editar"
+                            android:padding="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/edit_icon" />
+
+                        <!-- Ícono de tacho de basura para eliminar -->
+                        <ImageButton
+                            android:id="@+id/icon_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/eliminar"
+                            android:padding="8dp"
+                            android:src="@drawable/delate_icon" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+

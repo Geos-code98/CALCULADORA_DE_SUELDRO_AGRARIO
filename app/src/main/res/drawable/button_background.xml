@@ -1,0 +1,29 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado cuando el botón es presionado -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <gradient
+                android:startColor="#FF5722"
+                android:endColor="#E64A19"
+                android:angle="45" />
+            <stroke
+                android:width="2dp"
+                android:color="#FFCCBC" />
+        </shape>
+    </item>
+
+    <!-- Estado normal del botón -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <gradient
+                android:startColor="#FF9800"
+                android:endColor="#F57C00"
+                android:angle="45" />
+            <stroke
+                android:width="2dp"
+                android:color="#FFCCBC" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".boletas.FormularioActivity"
+    android:fitsSystemWindows="true">
+
+    <!-- ScrollView para hacer todo el formulario desplazable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Texto inicial -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese datos:"
+                android:textStyle="bold|italic"
+                android:layout_margin="10dp"
+                android:textSize="25sp" />
+
+            <!-- Primer Spinner que ya existía -->
+            <Spinner
+                android:id="@+id/selectorlabor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_background"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese las fechas trabajadas:"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="10dp" />
+
+            <!-- Contenedor de los nuevos Spinners y el Texto en el medio -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Primer nuevo EditText en la mitad izquierda -->
+                <EditText
+                    android:id="@+id/editTextFechai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background"
+                    android:focusable="false"
+                    android:layout_margin="10dp"
+                    android:clickable="true" />
+
+                <!-- Texto en el centro -->
+                <TextView
+                    android:id="@+id/center_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasta"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="10dp" />
+
+                <!-- Segundo nuevo EditText en la mitad derecha -->
+                <EditText
+                    android:id="@+id/editTextFechaf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background"
+                    android:focusable="false"
+                    android:layout_margin="10dp"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/texto_semana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semana:"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/texto_faltas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selecciona los dias faltados:"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp" />
+
+            <!-- <TextView
+                  android:id="@+id/texto_dia_de_semana"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:layout_margin="10dp"
+                  android:layout_marginHorizontal="10dp" /> -->
+            <LinearLayout
+                android:id="@+id/dias_faltados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/texto_hora_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horas extras:"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp" />
+
+            <LinearLayout
+                android:id="@+id/Horas_extrad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/texto_bono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Tienes Bono?"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp" />
+
+            <LinearLayout
+                android:id="@+id/campos_bonos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="35dp"
+                android:text="Guardar"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:padding="12dp"
+                android:elevation="4dp" />
+
+
+
+            <!-- Aquí puedes agregar más contenido dentro del ScrollView -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

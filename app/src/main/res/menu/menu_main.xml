@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Ítem de crear -->
+    <item
+        android:id="@+id/action_create"
+        android:icon="@drawable/ic_add"
+        android:title="@string/crear"
+        app:showAsAction="ifRoom"
+        android:theme="@style/CustomMenuTextStyle" />
+
+    <item
+        android:id="@+id/action_perfil"
+        android:title="@string/perfil"
+        app:showAsAction="never"
+        android:theme="@style/CustomMenuTextStyle" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/configuraci_n"
+        app:showAsAction="never"
+        android:theme="@style/CustomMenuTextStyle" />
+
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/ayuda"
+        app:showAsAction="never"
+        android:theme="@style/CustomMenuTextStyle" />
+</menu>

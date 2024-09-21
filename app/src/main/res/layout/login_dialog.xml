@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <EditText
+        android:id="@+id/textDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DNI"
+        android:inputType="number"
+        android:maxLength="8"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:digits="0123456789" />
+
+    <EditText
+        android:id="@+id/textnombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="nombres"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/textapellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de penciones:"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/selectorpensiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:layout_margin="10dp"
+
+        />
+
+
+    <Switch
+        android:id="@+id/switchasignacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Asignacion Familiar:"
+        android:textSize="20dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:text="Registrar"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+</LinearLayout>

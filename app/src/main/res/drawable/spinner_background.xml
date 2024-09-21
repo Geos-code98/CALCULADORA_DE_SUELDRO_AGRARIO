@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo del Spinner -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/> <!-- Fondo blanco -->
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <corners android:radius="4dp"/> <!-- Bordes redondeados más suaves -->
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="15dp"
+                android:bottom="15dp"/>
+        </shape>
+    </item>
+
+    <!-- Flecha -->
+    <item android:gravity="end|center_vertical" android:right="1dp">
+        <vector
+            android:width="35dp"
+        android:height="30dp"
+        android:viewportWidth="19"
+        android:viewportHeight="24">
+
+        <!-- Ajuste de la flecha -->
+        <path
+            android:fillColor="#4CAF50"
+            android:pathData="M6,9 L12,15 L18,9 Z"/> <!-- Ajusta el path para hacer la flecha más grande -->
+    </vector>
+</item>
+</layer-list>
+
